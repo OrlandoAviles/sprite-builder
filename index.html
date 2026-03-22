@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sprite Builder</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="app-header">
+    <h1>🧱 Sprite Builder</h1>
+    <p class="tagline">Build pixel sprites block by block</p>
+  </header>
+
+  <main class="app">
+
+    <!-- Canvas Area -->
+    <section class="canvas-panel">
+      <canvas id="canvas" width="320" height="320"></canvas>
+    </section>
+
+    <!-- Controls -->
+    <section class="controls-panel">
+
+      <div class="tool-group">
+        <h2>Tools</h2>
+        <button id="drawTool">Draw</button>
+        <button id="eraseTool">Erase</button>
+        <button id="clearCanvas">Clear</button>
+      </div>
+
+      <div class="tool-group">
+        <h2>Color</h2>
+        <input type="color" id="colorPicker" value="#00ffcc" />
+      </div>
+
+      <div class="tool-group">
+        <h2>Grid</h2>
+        <button id="toggleGrid">Toggle Grid</button>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="app-footer">
+    <p>v0.1 — Sprite Builder</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
